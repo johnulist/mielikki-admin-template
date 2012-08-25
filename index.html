@@ -1,0 +1,416 @@
+<html>
+	<head>
+		<title>Bootstrap Admin Template</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Quattrocento&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+					<a class="brand" href="#">Visit Site</a>
+					<div class="nav-collapse">
+						<ul class="nav pull-right">
+							<li>
+								<a href="#"> <i class="icon-wrench icon-white"></i> Settings </a>
+							</li>
+							<li>
+								<a href="#"> <i class="icon-user icon-white"></i> Account </a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-envelope icon-white"></i> Mesages <b class="caret"></b> </a>
+								<ul class="dropdown-menu dropdown-menu-inverse" role="menu">
+									<li>
+										<a href="#"> <i class="icon-inbox"></i> Unread </a>
+									</li>
+									<li>
+										<a href="#"> <i class="icon-inbox"></i> Inbox</a>
+									</li>
+									<li>
+										<a href="#"> <i class="icon-inbox"></i> Outbox</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#"> <i class="icon-off icon-white"></i> Logout </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav-clear">
+			<!-- iefix -->
+		</div>
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span2 sidebar">
+					<!--Sidebar content-->
+					<ul class="nav nav-list sidenav well">
+						<li>
+							<a href="#"><i class="icon-th"></i>Layouts</a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-file"></i>Pages</a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-th-list"></i>Sections</a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-th-large"></i>Blocks</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="#"><i class="icon-pencil"></i>Posts</a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-star"></i>Categories</a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-tags"></i>Tags</a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-comment"></i>Comments</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="#"><i class="icon-user"></i>Users</a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-filter"></i>Roles</a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="#"><i class="icon-wrench"></i>Settings</a>
+						</li>
+						<li>
+							<a href="#"><i class="icon-globe"></i>Resources</a>
+						</li>
+					</ul>
+				</div>
+				<div class="span10">
+					<!--Body content-->
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">Dashboard</a><span class="divider">/</span>
+						</li>
+						<li>
+							<a href="#">Posts</a><span class="divider">/</span>
+						</li>
+						<li class="active">
+							List
+						</li>
+					</ul>
+
+					<div class="alert alert-error">
+						<button type="button" class="close" data-dismiss="alert">
+							&#215;
+						</button>
+						<strong>Oh snap!</strong> Change a few things up and try submitting again.
+					</div>
+
+					<div class="alert alert-success">
+						<button type="button" class="close" data-dismiss="alert">
+							&#215;
+						</button>
+						<strong>Well done!</strong> You successfully read this important alert message.
+					</div>
+
+					<div class="alert alert-info">
+						<button type="button" class="close" data-dismiss="alert">
+							&#215;
+						</button>
+						<strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+					</div>
+
+					<h3>Posts :: List</h3>
+
+					<div class="row-fluid">
+						<div class="span12">
+							<div class="span4" data-original-title="Select all">
+								<div class="btn-group">
+									<button class="btn btn-primary btn-small">
+										Select all
+									</button>
+									<button class="btn btn-danger btn-small">
+										Destroy selected
+									</button>
+								</div>
+							</div>
+							<div class="span8" data-original-title="">
+								<div class="pagination pull-right">
+									<ul>
+										<li>
+											<a href="#">Prev</a>
+										</li>
+										<li>
+											<a href="#">1</a>
+										</li>
+										<li>
+											<a href="#">2</a>
+										</li>
+										<li>
+											<a href="#">3</a>
+										</li>
+										<li>
+											<a href="#">4</a>
+										</li>
+										<li>
+											<a href="#">Next</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row-fliud">
+						<div class="span12">
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>
+										<input type="checkbox" name="check_all" data-action="check-all" />
+										</th>
+										<th>Id</th>
+										<th> Title </th>
+										<th>Url</th>
+										<th>Description</th>
+										<th>State</th>
+										<th>Created on</th>
+										<th>Updated on</th>
+										<th>Actions</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+										<input type="checkbox" name="check_item" data-action="check-item" value="1" />
+										</td>
+										<td>1</td>
+										<td><a href="#" title="Entity Framework and Open Source"> Entity Framework and Open Source </a></td>
+										<td>entity-framework-and-open-source.html</td>
+										<td>The Entity Framework has advanced significantly over the last few years. A little over a year ago we released EF 4.1, which introduced the new DbContext API and EF “Code First” support.  Earlier this year we delivered EF 4.3, which provides Code First Migration support that enables developers to easily evolve database schema in a code optimized way.  And we are now in the final stages of wrapping up the EF 5 release, which adds enum support, spatial data types, table-valued function support and some significant performance and Visual Studio Tooling improvements.</td>
+										<td><img src="img/bullet_green.png" alt="active" class="status" /></td>
+										<td>July 19, 2012 8:55 AM</td>
+										<td>July 19, 2012 8:55 AM</td>
+										<td>
+										<div class="btn-group btn-group-vertical">
+											<a href="#" title="Edit" class="btn btn-small btn-primary">Edit</a>
+											<a href="#" title="View" class="btn btn-small btn-info">View</a>
+											<a href="#" title="Delete" class="btn btn-small btn-danger">Delete</a>
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<input type="checkbox" name="check_item" data-action="check-item" value="2" />
+										</td>
+										<td>2</td>
+										<td><a href="#" title="ASP.NET MVC, Web API, Razor and Open Source"> ASP.NET MVC, Web API, Razor and Open Source </a></td>
+										<td>asp-net-mvc-web-api-razor-and-open-source.html</td>
+										<td>Microsoft has made the source code of ASP.NET MVC available under an open source license since the first V1 release. We’ve also integrated a number of great open source technologies into the product, and now ship jQuery, jQuery UI, jQuery Mobile, jQuery Validation, Modernizr.js, NuGet, Knockout.js and JSON.NET as part of it.</td>
+										<td><img src="img/bullet_red.png" alt="inactive" class="status" /></td>
+										<td> March 27, 2012 5:02 PM</td>
+										<td> March 27, 2012 5:02 PM</td>
+										<td>
+										<div class="btn-group btn-group-vertical">
+											<a href="#" title="Edit" class="btn btn-small btn-primary">Edit</a>
+											<a href="#" title="View" class="btn btn-small btn-info">View</a>
+											<a href="#" title="Delete" class="btn btn-small btn-danger">Delete</a>
+										</div></td>
+									</tr>
+									<tr>
+										<td>
+										<input type="checkbox" name="check_item" data-action="check-item" value="3" />
+										</td>
+										<td>3</td>
+										<td><a href="#" title="ASP.NET Web API (Part 1)"> ASP.NET Web API (Part 1) </a></td>
+										<td>asp-net-web-api-part-1.html</td>
+										<td>Earlier this week I blogged about the release of the ASP.NET MVC 4 Beta.  ASP.NET MVC 4 is a significant update that brings with it a bunch of great new features and capabilities.  One of the improvements I’m most excited about is the support it brings for creating “Web APIs”.  Today’s blog post is the first of several I’m going to do that talk about this new functionality..</td>
+										<td><img src="img/bullet_orange.png" alt="moderate" class="status" /></td>
+										<td> February 23, 2012 10:06 PM</td>
+										<td> February 23, 2012 10:06 PM</td>
+										<td>
+										<div class="btn-group btn-group-vertical">
+											<a href="#" title="Edit" class="btn btn-small btn-primary">Edit</a>
+											<a href="#" title="View" class="btn btn-small btn-info">View</a>
+											<a href="#" title="Delete" class="btn btn-small btn-danger">Delete</a>
+										</div></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="row-fluid">
+						<div class="span12">
+							<div class="span4" data-original-title="">
+								<div class="btn-group">
+									<button class="btn btn-primary btn-small">
+										Select all
+									</button>
+									<button class="btn btn-danger btn-small">
+										Destroy selected
+									</button>
+								</div>
+							</div>
+							<div class="span8" data-original-title="">
+								<div class="pagination pull-right">
+									<ul>
+										<li>
+											<a href="#">Prev</a>
+										</li>
+										<li>
+											<a href="#">1</a>
+										</li>
+										<li>
+											<a href="#">2</a>
+										</li>
+										<li>
+											<a href="#">3</a>
+										</li>
+										<li>
+											<a href="#">4</a>
+										</li>
+										<li>
+											<a href="#">Next</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row-fliud">
+						<div class="span12">
+							<form>
+								<legend>
+									Add new post
+								</legend>
+								<div class="span7">
+
+									<div class="control-group well">
+										<label for="title">Title</label>
+										<div class="controls">
+											<input name="title" id="title" type="text" placeholder="The post title�" class="input-xxlarge">
+											<span class="help-block">Enter post title.</span>
+										</div>
+										<div class="controls">
+											<label for="link">Link</label>
+											<input name="link" id="link" type="text" placeholder="The post link" class="input-xxlarge">
+											<span class="help-block">Enter post link.</span>
+										</div>
+										<div class="controls">
+											<label for="description">Description</label>
+											<textarea name="description" id="description" placeholder="The post description" class="input-xxlarge" rows="3"></textarea>
+											<span class="help-block">Enter post description.</span>
+
+										</div>
+										<div class="controls">
+											<label for="body">Body</label>
+											<textarea name="body" id="body" rows="25" class="input-xxlarge"></textarea>
+											<span class="help-block">Enter post body.</span>
+										</div>
+										<div class="controls">
+											<label for="status">Status</label>
+											<select name="status" id="status">
+												<option value="1">Active</active> <option value="0">Blocked</active> <option value="2">Moderate</active>
+											</select>
+											<span class="help-block">Enter post status.</span>
+										</div>
+									</div>
+								</div>
+								<div class="span4">
+
+									<div class="control-group well">
+										<label>Category</label>
+										<div class="controls">
+											<label class="checkbox">
+												<input type="checkbox" id="category1" value="1">
+												ASP .NET </label>
+											<label class="checkbox">
+												<input type="checkbox" id="category1" value="1">
+												ASP .NET MVC </label>
+											<label class="checkbox">
+												<input type="checkbox" id="category1" value="1">
+												HTML </label>
+											<label class="checkbox">
+												<input type="checkbox" id="category1" value="1">
+												CSS </label>
+											<label class="checkbox">
+												<input type="checkbox" id="category1" value="1">
+												Javascript </label>
+											<label class="checkbox">
+												<input type="checkbox" id="category1" value="1">
+												Java </label>
+											<label class="checkbox">
+												<input type="checkbox" id="category1" value="1">
+												C# </label>
+										</div>
+									</div>
+
+									<div class="control-group well">
+										<label>Tags</label>
+										<div class="controls">
+											<a class="label">SQL</a>
+											<a class="label">NOSQL</a>
+											<a class="label">Ruby</a>
+											<a class="label">Python</a>
+											<a class="label">GAE</a>
+											<a class="label">Heroku</a>
+											<a class="label">Hosting</a>
+											<a class="label">HAML</a>
+											<a class="label">SCSS</a>
+											<a class="label">ORM</a>
+											<a class="label">Rails</a>
+											<a class="label">Merb</a>
+											<a class="label">Sinatra</a>
+											<a class="label">Padrion</a>
+											<a class="label">Camping</a>
+											<a class="label">Ramaze</a>
+											<a class="label">Vintage</a>
+											<a class="label">Halcyon</a>
+											<a class="label">Nitro/Og</a>
+											<a class="label">Wuby</a>
+											<a class="label">Ruby WAF</a>
+											<a class="label">webby</a>
+										</div>
+										<br/>
+										<div class="controls controls-row">
+											<div class="input-prepend">
+												<span class="add-on"><i class="icon-tags"></i></span>
+												<input type="text" class="input-xlarge" id="tag_name" name="tag_name">
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div class="row-fliud">
+									<div class="span12">
+										<div class="form-actions">
+											<a href="#" class="btn btn-info input-small"> Back to list </a>
+											<button type="submit" class="btn btn-primary input-medium">
+												Save
+											</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("a[data-rel='tooltip']").tooltip();
+			});
+		</script>
+	</body>
+</html>
