@@ -1,82 +1,117 @@
 body {
-	font-family: 'Quattrocento', serif;
+	background-color: #E5E5E5;
+	padding-top: 60px;
+    padding-bottom: 40px;
+    font-family: 'Quattrocento';    
 }
 
-.row-fliud {
+.sidebar {
+	padding-left: 10px;
+}
+
+.content {
+	padding: 0 10px;
+}
+
+.widget .widget-header {
+
+}
+
+.widget .widget-header > h4 {
+	margin: 0;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;	
+	font-weight: bold;
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+	background-color: #08C;
+	padding: 8px;
+	margin-top: 1px;
+	margin-right: 1px;
+}
+
+.widget .widget-header > h4 > i {
+	margin-right: 5px;
+}
+
+.widget .widget-header .controls {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 10px 20px 20px 20px;
+	background-color: whiteSmoke; 
+} 
+
+.widget {
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px #978F6C;	
+	margin-bottom: 20px;
+}
+
+.widget-content {
+	padding: 0 20px;
+	min-height: 20px;
+	background: #fff;
+	display: table;
+}
+
+form.widget-content 
+{
+	padding: 0;	
+}
+
+form.widget-content > legend
+{
+	padding: 15px 0 0;
+	text-indent: 20px;
+}
+
+form.widget-content > fieldset 
+{
+	padding: 0 5px;
+}
+
+form.widget-content label.control-label
+{
+	font-weight: bold;	
+}
+
+form.widget-content label.control-label:after
+{
+	content: ":";
+}
+
+.widget .info {
 	margin-top: 5px;
 }
 
-/* misc */
-.nav-clear {
-	clear: both;
-	margin-top: 70px;
-}
+.widget .grid {
+	margin-bottom: 0;
+} 
 
-.btn-group-vertical .btn {
-	width: auto;
-}
-
-.drive {
-	-moz-box-shadow: -5px -5px 5px 5px #888;
-	-webkit-box-shadow: -5px -5px 5px 5px #888;
-	box-shadow: -5px -5px 5px 5px #888;
+.widget .footer {
+	margin-top: 0;
+	margin-bottom: 1px;
 	border-radius: 5px;
-	padding: 12px;
-	margin: 20px 0;
 }
 
-/* tables */
-
-.table {
-	font-size: 14px;
+.widget form {
+	margin: 0;
 }
 
-.table thead {
-	background-color: whiteSmoke;
+.navigation .nav {
+	width: 150px;
+	background: #fff;
 }
-
-.table th:first-child {
-	vertical-align: middle;
-	text-align: center;
-}
-
-.table td img.status {
-	display: block;
-	margin: 0 auto;
-}
-
-.table td:last-child {
-	text-align: center;
-}
-
-/* pagination */
 
 .pagination {
-	height: 20px;
-	margin: 0 0 15px 0;
+	margin: 0;
+	padding: 0;
 }
 
 .pagination a, .pagination span {
-	line-height: 30px;
+	line-height: 28px;
 }
 
-/* forms */
-form label:after{
-	content: ':';
-}
-
-form label.checkbox:after{
-	content: '';
-}
-
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {		
-	height: auto;
-}
-
-.help-block {
-	color: #6A6969;
-	font-size: 0.85em;
-	margin-left: 5px;
-	cursor: pointer;
-	position: relative;
+.row.footer {
+	margin: 0;
 }
